@@ -79,13 +79,13 @@ bot.on('message', message => {
 bot.on('message', message => { 
     if(message.content === ':markdown') {
         message.channel.send(`**WhiteBot** - MarkdownTest [Cet affichage sera disponible très bientôt !]
-*Italique* \*Texte*
-**Gras** \**Texte**
-***Italique + Gras*** \***Texte***
-_Texte_ \_Texte_
-__Texte__ \__Texte_
-___Texte___ \___Texte___
-~~Texte~~ \_Texte_`)
+*Italique*
+**Gras**
+***Italique + Gras***
+_Texte_
+__Texte__
+___Texte___
+~~Texte~~`)
     }
 });
 
