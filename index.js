@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', function() {
     console.log("WhiteBot > Le bot à été lancé avec succès !");
-    bot.channels.get('420257701537513483').send({embed: {
+    bot.channels.get('421057138673188865').send({embed: {
         color: 3066993,
         fields: [{
             name: 'WhiteBot',
@@ -14,17 +14,6 @@ bot.on('ready', function() {
             icon_url: bot.user.avatarURL,
             text: 'Lancement'
         }}});
-        bot.channels.get('372452267439423488').send({embed: {
-            color: 3066993,
-            fields: [{
-                name: 'WhiteBot',
-                value: '**Statut** - Lancé avec succès !'
-            }],
-            timestamp: new Date(),
-            footer: {
-                icon_url: bot.user.avatarURL,
-                text: 'Lancement'
-            }}});
 })
 
 bot.login(process.env.TOKEN) // Token
