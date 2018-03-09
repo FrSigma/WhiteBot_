@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-bot.on('ready', () => {bot.user.setPresence({status:"online",game:{name:'Aide - :help',url:'goo.gl/SJee1s'},})});
+bot.on('ready', () => {bot.user.setPresence({status:"online",game:{name:'Aide - :help'},})});
 
 
 bot.on('ready', function() {
