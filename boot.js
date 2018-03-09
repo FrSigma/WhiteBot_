@@ -1,5 +1,8 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+bot.user.setStatus('online');
+bot.user.setGame('Aide - :help','https://github.com/FrSigma/WhiteBot_');
+
 
 bot.on('ready', function() {
     console.log("WhiteBot > Le bot à été lancé avec succès !");
@@ -25,7 +28,6 @@ bot.on('ready', function() {
                 icon_url: bot.user.avatarURL,
                 text: 'Lancement'
             }}});
-    bot.user.setPresence({status: 'online', game: {name: ':help - Aide'}});
 })
 
 bot.login(process.env.TOKEN) // Token
@@ -61,10 +63,6 @@ bot.on('message', message => {
             {
                 name: 'Expérimental (Instable)',
                 value: '**:oauth2** - Pour m\'inviter sur ton serveur Discord\n**:markdown** - Affiche quelques codes en Markdown'
-            },
-            {
-                name: 'Description du Staff **du serveur des Moussaillons** - https://discord.gg/XGjPy9y',
-                value: '**:whiteplasma_** / **:luffinks** - Description des Captaines\n**:mortel_raptor** - Modérateur\n**:lapatatedufutur** - Modérateur\n**:celico_67** - Modératrice'
             }],
             timestamp: new Date(),
             title: 'WhiteBot',
@@ -118,3 +116,15 @@ bot.on('message', message => {
        message.channel.send('Celico_67: Modératrice du serveur des Moussaillons qui vient du 67, une grande fan de Minecraft qui aime les rebéllions.')
     }
 });
+
+//bot.on('message', message => {
+//    if(message.content === ':help') {
+//       message.channel.send({embed: {
+//            color: 3066993,
+//            fields: [{
+//                name: 'Description du Staff **du serveur des Moussaillons** - https://discord.gg/XGjPy9y',
+//                value: '**:whiteplasma_** / **:luffinks** - Description des Captaines\n**:mortel_raptor** - Modérateur\n**:lapatatedufutur** - Modérateur\n**:celico_67** - Modératrice'
+//            }}); 
+//        }
+//    });
+
