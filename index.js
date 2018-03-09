@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-bot.user.setPassword('qupi95')
-bot.user.setEmail('whitebotdelta@gmail.com')
-bot.user.setPresence({status:"online",game:{name:'Aide - :help',url:'https://github.com/FrSigma/WhiteBot_'},})
+bot.user.setPresence({status:"online",game:{name:'Aide - :help',url:'https://github.com/FrSigma/WhiteBot_'},});
 
 bot.on('ready', function() {
     console.log("WhiteBot > Le bot à été lancé avec succès !");
