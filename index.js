@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-bot.user.setPresence({status:"online",game:{name:'Aide - :help',url:'https://github.com/FrSigma/WhiteBot_'},});
+bot.user.setPresence({status:"online",game:{name:'Aide - :help',url:'goo.gl/SJee1s'},});
 
 bot.on('ready', function() {
     console.log("WhiteBot > Le bot à été lancé avec succès !");
