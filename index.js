@@ -114,4 +114,32 @@ bot.on('message', message => {
 //                value: '**:whiteplasma_** / **:luffinks** - Description des Captaines\n**:mortel_raptor** - Modérateur\n**:lapatatedufutur** - Modérateur\n**:celico_67** - Modératrice'
 //            }}); 
 //        }
-//    });aasdd;;h..l
+//    });
+
+bot.on('message', message => {
+    if(message.content === ':status online') {
+       bot.user.setStatus('online')
+       message.delete()
+    }
+});
+
+bot.on('message', message => {
+    if(message.content === ':status idle') {
+       bot.user.setStatus('idle')
+       message.delete()
+    }
+});
+
+bot.on('message', message => {
+    if(message.content === ':status invisible') {
+       bot.user.setStatus('invisible')
+       message.delete()
+    }
+});
+
+bot.on('message', message => {
+    if(message.content === ':status dnd') {
+       bot.user.setStatus('dnd')
+       message.delete()
+    }
+});
