@@ -118,28 +118,28 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if(message.content === ':status online') {
-       bot.user.setStatus('online')
-       message.delete()
+        bot.user.setPresence({status:'online',game:{name:'Aide - :help',url:'https://github.com/FrSigma/WhiteBot_'}})
+        message.delete()
     }
 });
 
 bot.on('message', message => {
     if(message.content === ':status idle') {
-       bot.user.setStatus('idle')
-       message.delete()
+        bot.user.setPresence({status:'idle',game:{name:'Aide - :help',url:'https://github.com/FrSigma/WhiteBot_'}})
+        message.delete()
     }
 });
 
 bot.on('message', message => {
     if(message.content === ':status invisible') {
-       bot.user.setStatus('invisible')
-       message.delete()
+        bot.user.setPresence({status:'invisible',game:{name:'Aide - :help',url:'https://github.com/FrSigma/WhiteBot_'}})
+        message.delete()
     }
 });
 
 bot.on('message', message => {
     if(message.content === ':status dnd') {
-       bot.user.setStatus('dnd')
-       message.delete()
+        bot.user.setPresence({status:'dnd',game:{name:'Aide - :help',url:'https://github.com/FrSigma/WhiteBot_'}})
+        message.delete()
     }
 });
