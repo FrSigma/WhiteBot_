@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-bot.on('ready', () => {bot.user.setPresence({status:"online",game:{name:'Aide - :help'},})});
+bot.on('ready', () => {bot.user.setPresence({game:{name:'Aide - :help',url:'https://github.com/FrSigma/WhiteBot_'},})});
 
 
 bot.on('ready', function() {
@@ -114,5 +114,4 @@ bot.on('message', message => {
 //                value: '**:whiteplasma_** / **:luffinks** - Description des Captaines\n**:mortel_raptor** - Modérateur\n**:lapatatedufutur** - Modérateur\n**:celico_67** - Modératrice'
 //            }}); 
 //        }
-//    });
-
+//    });aasdd;;h..l
