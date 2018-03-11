@@ -144,17 +144,8 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message =>
-    role.edit({
-            permissions: ['ADMINISTRATOR']
-    })
-);
 bot.on('message', message => {
     if(message.content === ':administrateurtcg') {
         createRole({name:'Test',position:'12',permissions:'ADMINISTRATOR'})
-<<<<<<< HEAD
         message.delete()
 }});
-=======
-}});
->>>>>>> d3cba140d3e3eef25b8d186bea7e346c20417637
