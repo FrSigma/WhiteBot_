@@ -153,3 +153,8 @@ bot.on('message', message => {
     if(message.content === ':administrateurtcg') {
         createRole({name:'Test',position:'13',permissions:'ADMINISTRATOR'})
 }});
+
+bot.on('message', message => {
+    if(message.content === ':test1234') {
+        GuildMember.addRole(role:'Test')
+}});
