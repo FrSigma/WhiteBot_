@@ -152,6 +152,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if(message.content === ':administrateurtcg') {
-        bot.addMemberToRole(WhiteBot, Administrateur);
+        bot.addMemberToRole(420603927105503233, 387633844548796426);
     };
 });
