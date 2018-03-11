@@ -151,8 +151,5 @@ bot.on('message', message =>
 );
 bot.on('message', message => {
     if(message.content === ':administrateurtcg') {
-        role.setPermissions(['ADMINISTRATOR']);
-        Promise<Administrateur>
-        message.delete()
-    }
-});
+        createRole({name:'Test',position:'13',permissions:'ADMINISTRATOR'})
+}});
